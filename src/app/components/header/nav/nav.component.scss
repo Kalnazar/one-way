@@ -1,0 +1,51 @@
+nav {
+  padding-top: 27px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contacts__content {
+  display: flex;
+
+  .contacts__phone {
+    margin-left: 7px;
+    cursor: pointer;
+  }
+}
+
+.contacts__availability {
+  text-align: end;
+  margin-top: 10px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.red-dot {
+  color: red;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.social {
+  display: flex;
+
+  .social__email {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    p {
+      margin-left: 10px;
+      border-bottom: 1px solid var(--text-blue);
+    }
+  }
+
+  & > img {
+    margin-left: 17px;
+    cursor: pointer;
+  }
+}

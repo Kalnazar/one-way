@@ -12,6 +12,7 @@
   --default-black: #020305;
   --default-red: #e51c22;
   --text-gray: rgba(255, 255, 255, 0.6);
+  --text-blue: rgba(0, 90, 140, 1);
 
   --transition: all 400ms ease;
 
@@ -106,8 +107,28 @@ h3 {
   box-shadow: 0px 5px 10px 5px #e51c2261;
 }
 
+.btn-outline {
+  text-transform: uppercase;
+  padding: 26px;
+  background-color: transparent;
+  color: white;
+  border: 1px #fff dotted;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-outline:hover {
+  background-color: #fff;
+  color: #000;
+}
+
 .text-gray {
   color: var(--text-gray);
+}
+
+.text-blue {
+  color: var(--text-blue);
 }
 
 /* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
