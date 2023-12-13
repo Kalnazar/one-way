@@ -2,11 +2,19 @@ import { Component } from '@angular/core';
 import { WorkComponent } from './work/work.component';
 import { AdvantagesComponent } from './advantages/advantages.component';
 import { EntryComponent } from './entry/entry.component';
+import { TeamComponent } from './team/team.component';
+import { BriefComponent } from './brief/brief.component';
 
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [EntryComponent, WorkComponent, AdvantagesComponent],
+  imports: [
+    EntryComponent,
+    WorkComponent,
+    AdvantagesComponent,
+    TeamComponent,
+    BriefComponent,
+  ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',
 })
