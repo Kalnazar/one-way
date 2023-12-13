@@ -1,0 +1,58 @@
+.work__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 500px;
+}
+
+.project {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 48px 58px 0px 58px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+
+  .project__content {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+
+    img {
+      width: 162px;
+    }
+
+    p {
+      padding: 18px;
+      font-size: 16px;
+      font-weight: 500;
+      color: rgba(2, 3, 5, 1);
+      background-color: #fff;
+      border-radius: 5px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.project:hover {
+  transform: scale(1.1);
+}
+
+.work__title {
+  background-color: rgba(34, 43, 42, 1);
+  padding: 58px 155px 0px 70px;
+
+  img {
+    width: 160px;
+  }
+
+  h2 {
+    margin-top: 50px;
+    color: white;
+    text-align: start;
+  }
+
+  p {
+    margin-top: 50px;
+    font-size: 33px;
+  }
+}

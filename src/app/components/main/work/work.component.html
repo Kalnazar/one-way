@@ -1,0 +1,29 @@
+<section id="work">
+  <div class="work__content">
+    <div
+      *ngFor="let project of projects"
+      class="project"
+      [ngStyle]="{ 'background-image': 'url(' + project.url + ')' }"
+    >
+      <div class="project__content">
+        <img
+          src="{{
+            project.logo == 'light'
+              ? './../../../../assets/images/logo-light.svg'
+              : './../../../../assets/images/logo-dark.svg'
+          }}"
+          alt="Logo Icon"
+        />
+        <p>Продающий сайт</p>
+      </div>
+    </div>
+    <div class="work__title">
+      <img src="./../../../../assets/images/logo-light.svg" alt="Logo Icon" />
+      <h2>Наше портфолио</h2>
+      <p class="text-gray">
+        У нас есть опыт работы с сайтами и уже удалось создать несколько
+        проектов с нашими клиентами
+      </p>
+    </div>
+  </div>
+</section>

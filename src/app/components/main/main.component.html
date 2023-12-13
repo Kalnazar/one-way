@@ -1,15 +1,19 @@
 <main>
-  <section class="entry">
-    <div class="entry__rectangles">
-      <div
-        *ngFor="let rect of rectangles"
-        class="rectangle"
-        [ngClass]="{ visible: rect.isVisible }"
-      ></div>
+  <section id="entry" class="entry">
+    <div class="container">
+      <div class="entry__rectangles">
+        <div
+          *ngFor="let rect of rectangles"
+          class="rectangle"
+          [ngClass]="{ visible: rect.isVisible }"
+        ></div>
+      </div>
+      <h2>
+        Посмотрите некоторые <br />
+        из наших работ за последние 3 месяца
+      </h2>
     </div>
-    <h2>
-      Посмотрите некоторые <br />
-      из наших работ за последние 3 месяца
-    </h2>
   </section>
+  <app-work></app-work>
+  <app-advantages></app-advantages>
 </main>

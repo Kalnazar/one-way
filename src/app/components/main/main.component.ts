@@ -1,10 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener, OnInit } from '@angular/core';
+import { WorkComponent } from './work/work.component';
+import { AdvantagesComponent } from './advantages/advantages.component';
 
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, WorkComponent, AdvantagesComponent],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',
 })
