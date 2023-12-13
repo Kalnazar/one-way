@@ -1,36 +1,22 @@
-import { CommonModule } from '@angular/common';
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { WorkComponent } from './work/work.component';
 import { AdvantagesComponent } from './advantages/advantages.component';
+import { EntryComponent } from './entry/entry.component';
 
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [CommonModule, WorkComponent, AdvantagesComponent],
+  imports: [EntryComponent, WorkComponent, AdvantagesComponent],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',
 })
-export class MainComponent implements OnInit {
-  rectangles = new Array(3).fill({ isVisible: false });
-
-  ngOnInit(): void {
-    this.checkVisibility();
-  }
-
-  @HostListener('window:scroll', ['$event'])
-  onWindowScroll() {
-    this.checkVisibility();
-  }
-
-  private checkVisibility() {
-    const elements = document.querySelectorAll('.entry__rectangles .rectangle');
-    let delay = 0;
-    const delayIncrement = 1000;
-    elements.forEach((el, index) => {
-      const rect = el.getBoundingClientRect();
-      if (rect.top < window.innerHeight) {
-        this.rectangles[index].isVisible = true;
-      }
-    });
-  }
+export class MainComponent {
+  entryTitle: string[] = [
+    'Посмотрите некоторые из наших работ за последние 3 месяца',
+    'Мы имеем при себе уникальные качества, которые не имеют наши единомышленники',
+    'На каждом этапе над проектом работает профессионал в своей области',
+    'Мы создали для вас качественный бриф, чтобы вникнуть в процесс изготовки',
+    'Вам понадобится наша услуга, если вы:',
+    'Предлагаем вам специальное предложение перед началом работы',
+  ];
 }

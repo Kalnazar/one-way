@@ -1,21 +1,6 @@
 <main>
-  <section id="entry" class="entry">
-    <div class="container">
-      <div class="entry__rectangles">
-        <div
-          *ngFor="let rect of rectangles"
-          class="rectangle"
-          [ngClass]="{ visible: rect.isVisible }"
-        ></div>
-      </div>
-      <div class="entry__title">
-        <h2>
-          Посмотрите некоторые <br />
-          из наших работ за последние 3 месяца
-        </h2>
-      </div>
-    </div>
-  </section>
+  <app-entry [title]="entryTitle[0]" [isBgGray]="true"></app-entry>
   <app-work></app-work>
+  <app-entry [title]="entryTitle[1]"></app-entry>
   <app-advantages></app-advantages>
 </main>

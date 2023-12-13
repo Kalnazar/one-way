@@ -1,0 +1,22 @@
+<section
+  id="entry"
+  class="entry"
+  [ngStyle]="{
+    'background-color': isBgGray ? 'rgba(34, 43, 42, 1)' : 'rgba(8, 8, 8, 1)'
+  }"
+>
+  <div class="container">
+    <div class="entry__rectangles">
+      <div
+        *ngFor="let rect of rectangles"
+        class="rectangle"
+        [ngClass]="{ visible: rect.isVisible }"
+      ></div>
+    </div>
+    <div class="entry__title">
+      <h2>
+        {{ title }}
+      </h2>
+    </div>
+  </div>
+</section>
