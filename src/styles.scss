@@ -135,13 +135,28 @@ h3 {
 @media screen and (max-width: 1024px) {
   h1,
   h2 {
-    font-size: 24px;
+    font-size: 30px;
+    line-height: 40px;
   }
 
   .btn {
+    font-size: 14px;
+    padding: 20px;
   }
 }
 
 /* ========== MEDIA QUERIES (SMALL DEVICES) ========== */
 @media screen and (max-width: 600px) {
+  h1,
+  h2 {
+    font-size: 19px;
+    line-height: 23px;
+  }
+
+  .btn {
+    width: 235px;
+    font-size: 10px;
+    padding: 12px;
+    line-height: 17px;
+  }
 }

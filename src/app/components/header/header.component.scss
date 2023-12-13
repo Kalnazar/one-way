@@ -3,10 +3,17 @@ header {
   background-image: url(./../../../assets/images/first-bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+}
+
+.header__content {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
 }
 
 .content {
-  margin-top: 24px;
+  width: 690px;
   text-align: center;
 
   .description {
@@ -18,5 +25,23 @@ header {
 
   button {
     margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    height: 100%;
+  }
+
+  .content {
+    width: 500px;
+    padding-bottom: 400px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    height: 100vh;
+    background-image: url(./../../../assets/images/first-bg-mobile.png);
   }
 }
