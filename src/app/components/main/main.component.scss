@@ -34,3 +34,29 @@
 .rectangle.visible:nth-child(3) {
   opacity: 1;
 }
+
+@media screen and (max-width: 1024px) {
+  .entry {
+    padding-bottom: 70px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .entry {
+    padding-bottom: 40px;
+
+    .entry__title {
+      display: flex;
+      justify-content: center;
+    }
+
+    h2 {
+      width: 260px;
+    }
+  }
+
+  .rectangle {
+    width: 4px;
+    height: 4px;
+  }
+}
