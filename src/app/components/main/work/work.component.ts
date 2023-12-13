@@ -13,23 +13,23 @@ export class WorkComponent {
   projects: Project[] = [
     {
       logo: 'dark',
-      url: './../../../../assets/images/project-first.png',
+      url: 'assets/images/project-first.png',
     },
     {
       logo: 'dark',
-      url: './../../../../assets/images/project-second.png',
+      url: 'assets/images/project-second.png',
     },
     {
       logo: 'light',
-      url: './../../../../assets/images/project-third.png',
+      url: 'assets/images/project-third.png',
     },
     {
       logo: 'dark',
-      url: './../../../../assets/images/project-fourth.png',
+      url: 'assets/images/project-fourth.png',
     },
     {
       logo: 'dark',
-      url: './../../../../assets/images/project-fifth.png',
+      url: 'assets/images/project-fifth.png',
     },
   ];
 }
