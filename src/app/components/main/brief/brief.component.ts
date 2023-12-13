@@ -5,8 +5,8 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './brief.component.html',
-  styleUrl: './brief.component.scss'
+  styleUrl: './brief.component.scss',
 })
 export class BriefComponent {
-
+  imageUrl = 'assets/images/brief.png';
 }
