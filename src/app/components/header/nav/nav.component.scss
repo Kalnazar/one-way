@@ -73,4 +73,20 @@ a img {
 }
 
 @media screen and (max-width: 600px) {
+  .contacts__content .contacts__phone {
+    font-size: 16px;
+  }
+
+  .contacts__availability {
+    font-size: 10px;
+    margin-top: 7px;
+  }
+
+  a img {
+    width: 66px;
+  }
+
+  .social {
+    display: none;
+  }
 }
