@@ -2,7 +2,12 @@
   id="entry"
   class="entry"
   [ngStyle]="{
-    'background-color': isBgGray ? 'rgba(34, 43, 42, 1)' : 'rgba(8, 8, 8, 1)'
+    'background-color':
+      isBgGray == null
+        ? 'transparent'
+        : isBgGray == true
+        ? 'rgba(34, 43, 42, 1)'
+        : 'rgba(8, 8, 8, 1)'
   }"
 >
   <div class="container">

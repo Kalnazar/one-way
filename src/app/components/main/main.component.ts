@@ -4,6 +4,7 @@ import { AdvantagesComponent } from './advantages/advantages.component';
 import { EntryComponent } from './entry/entry.component';
 import { TeamComponent } from './team/team.component';
 import { BriefComponent } from './brief/brief.component';
+import { TargetAudienceComponent } from './target-audience/target-audience.component';
 
 @Component({
   selector: 'app-main',
@@ -14,6 +15,7 @@ import { BriefComponent } from './brief/brief.component';
     AdvantagesComponent,
     TeamComponent,
     BriefComponent,
+    TargetAudienceComponent,
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',
@@ -26,7 +28,8 @@ export class MainComponent {
     team: 'На каждом этапе над проектом работает профессионал в своей области',
     brief:
       'Мы создали для вас качественный бриф, чтобы вникнуть в процесс изготовки',
-    specialization: 'Вам понадобится наша услуга, если вы:',
+    targetAudience: 'Вам понадобится наша услуга, если вы:',
     offer: 'Предлагаем вам специальное предложение перед началом работы',
   };
+  targetAudienceBg = 'assets/images/targetAudience-bg.png';
 }

@@ -10,7 +10,7 @@ import { Component, HostListener, Input, OnInit } from '@angular/core';
 })
 export class EntryComponent implements OnInit {
   @Input() title: string = '';
-  @Input() isBgGray: boolean = false;
+  @Input() isBgGray: boolean | null = false;
   rectangles = new Array(3).fill({ isVisible: false });
 
   ngOnInit(): void {
