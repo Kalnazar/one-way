@@ -1,0 +1,58 @@
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantage {
+  width: 361px;
+  height: 529px;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  color: rgba(2, 3, 5, 1);
+
+  .advantage__number {
+    margin-top: 87px;
+  }
+
+  .description {
+    padding: 60px 30px 0px 30px;
+    display: grid;
+    grid-gap: 12px;
+
+    p {
+      font-size: 16px;
+      color: rgba(2, 3, 5, 0.6);
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .content {
+    display: grid;
+    justify-content: center;
+    grid-gap: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .advantage {
+    width: 282px;
+    height: 413px;
+
+    .advantage__number {
+      margin-top: 65px;
+    }
+
+    .description {
+      padding-top: 48px;
+      grid-gap: 10px;
+
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}

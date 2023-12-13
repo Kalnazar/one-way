@@ -1,1 +1,21 @@
-<p>advantages works!</p>
+<section id="advantages">
+  <div class="container">
+    <div class="content">
+      <div
+        *ngFor="let advantage of advantages; let i = index"
+        class="advantage"
+        [ngStyle]="{ 'background-image': 'url(' + advantage.imageUrl + ')' }"
+      >
+        <div class="advantage__number">
+          <p>0{{ i + 1 }}</p>
+        </div>
+
+        <div class="description">
+          <h3>{{ advantage.title }}</h3>
+          <p class="statement" [innerHTML]="advantage.statement"></p>
+          <p class="result">{{ advantage.result }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
