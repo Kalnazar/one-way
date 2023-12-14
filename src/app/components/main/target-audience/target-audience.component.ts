@@ -10,7 +10,6 @@ import { CommonModule } from '@angular/common';
   styleUrl: './target-audience.component.scss',
 })
 export class TargetAudienceComponent {
-  polygonImageUrl = 'assets/images/polygon.svg';
   targetAudience: Audience[] = [
     {
       imageUrl: 'assets/images/info-producer.png',
