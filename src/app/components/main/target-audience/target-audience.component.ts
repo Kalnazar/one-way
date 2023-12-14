@@ -1,15 +1,17 @@
 import { Component } from '@angular/core';
 import { Audience } from '../../../shared/models/audience';
 import { CommonModule } from '@angular/common';
+import { EntryComponent } from '../entry/entry.component';
 
 @Component({
   selector: 'app-target-audience',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, EntryComponent],
   templateUrl: './target-audience.component.html',
   styleUrl: './target-audience.component.scss',
 })
 export class TargetAudienceComponent {
+  title = 'Вам понадобится наша услуга, если вы:';
   targetAudience: Audience[] = [
     {
       imageUrl: 'assets/images/info-producer.png',

@@ -24,13 +24,16 @@ export class EntryComponent implements OnInit {
 
   private checkVisibility() {
     const elements = document.querySelectorAll('.entry__rectangles .rectangle');
-    let delay = 0;
-    const delayIncrement = 1000;
-    elements.forEach((el, index) => {
-      const rect = el.getBoundingClientRect();
-      if (rect.top < window.innerHeight) {
-        // this.rectangles[index].isVisible = true;
-      }
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        console.log(entry);
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        } else {
+          entry.target.classList.remove('show');
+        }
+      });
     });
+    elements.forEach((el) => observer.observe(el));
   }
 }

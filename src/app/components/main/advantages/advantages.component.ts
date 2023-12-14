@@ -1,15 +1,18 @@
 import { Component } from '@angular/core';
 import { Advantage } from '../../../shared/models/advantage';
 import { CommonModule } from '@angular/common';
+import { EntryComponent } from '../entry/entry.component';
 
 @Component({
   selector: 'app-advantages',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, EntryComponent],
   templateUrl: './advantages.component.html',
   styleUrl: './advantages.component.scss',
 })
 export class AdvantagesComponent {
+  title =
+    'Мы имеем при себе уникальные качества, которые не имеют наши единомышленники';
   advantages: Advantage[] = [
     {
       title: 'МЫ ГАРАНТИРУЕМ ШТРАФ',

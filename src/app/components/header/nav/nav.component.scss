@@ -6,6 +6,10 @@ nav {
   justify-content: space-between;
 }
 
+img {
+  width: 32px;
+}
+
 .contacts__content {
   display: flex;
   align-items: center;
@@ -22,7 +26,7 @@ nav {
   }
 }
 
-a img {
+.logo img {
   width: 120px;
 }
 
@@ -44,27 +48,25 @@ a img {
 .social {
   display: flex;
 
-  .social__email {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+  & > a {
+    margin-left: 17px;
+  }
+}
 
-    img {
-      width: 12px;
-      height: 12px;
-    }
+.social__email {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 
-    p {
-      margin-left: 10px;
-      border-bottom: 1px solid var(--text-blue);
-      font-size: 16px;
-    }
+  img {
+    width: 12px;
+    height: 12px;
   }
 
-  & > img {
-    width: 32px;
-    margin-left: 17px;
-    cursor: pointer;
+  p {
+    margin-left: 10px;
+    border-bottom: 1px solid var(--text-blue);
+    font-size: 16px;
   }
 }
 
@@ -73,9 +75,10 @@ a img {
     font-size: 18px;
   }
 
-  .social .social__email {
+  .social__email {
     img {
       width: 32px;
+      height: 32px;
     }
     p {
       display: none;

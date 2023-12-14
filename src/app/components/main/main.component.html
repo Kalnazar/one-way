@@ -1,21 +1,13 @@
 <main>
-  <app-entry [title]="entryTitle.projects" [isBgGray]="true"></app-entry>
   <app-work></app-work>
-  <app-entry [title]="entryTitle.advantages"></app-entry>
   <app-advantages></app-advantages>
-  <app-entry [title]="entryTitle.team"></app-entry>
   <app-team></app-team>
-  <app-entry [title]="entryTitle.brief"></app-entry>
   <app-brief></app-brief>
   <div
     class="targetAudience"
     [style.background-image]="'url(' + targetAudienceBg + ')'"
   >
-    <app-entry
-      [title]="entryTitle.targetAudience"
-      [isBgGray]="null"
-    ></app-entry>
     <app-target-audience></app-target-audience>
   </div>
-  <app-entry [title]="entryTitle.offer"></app-entry>
+  <app-special-offer></app-special-offer>
 </main>
