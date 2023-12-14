@@ -16,21 +16,21 @@ export class AdvantagesComponent {
       statement: 'За срыв сроков в размере <br/> 3 000 тг/день',
       result:
         'Тем самым обеспечиваем вам нашу пунктуальность и вовремя закрытые дедлайны',
-      imageUrl: 'assets/images/advantage-1.svg',
+      imageUrl: 'assets/images/advantage-1.png',
     },
     {
       title: 'БЕСКОНЕЧНЫЕ ПРАВКИ',
       statement: 'Глубоко погружаемся <br/> в ваш проект',
       result:
         'Тем самым обеспечиваем вам нашу пунктуальность и вовремя закрытые дедлайны',
-      imageUrl: 'assets/images/advantage-2.svg',
+      imageUrl: 'assets/images/advantage-2.png',
     },
     {
       title: 'ЭКСПЕРТНЫЙ БЛОГ',
       statement: 'Ведем блог в инстаграмме, <br/> показывая свою экспертность',
       result:
         'В результате, вы можете наблюдать за нашим и вашим прогрессом разработки сайта',
-      imageUrl: 'assets/images/advantage-3.svg',
+      imageUrl: 'assets/images/advantage-3.png',
     },
   ];
 }

@@ -10,19 +10,11 @@ section {
 .advantage {
   width: 361px;
   height: 529px;
+  position: relative;
   overflow: hidden;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  text-align: center;
-  color: rgba(2, 3, 5, 1);
-
-  .advantage__number {
-    margin-top: 87px;
-  }
 
   .description {
-    padding: 60px 30px 0px 30px;
+    padding: 0px 30px;
     display: grid;
     grid-gap: 12px;
 
@@ -31,6 +23,41 @@ section {
       color: rgba(2, 3, 5, 0.6);
     }
   }
+}
+
+.hexagon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: rgba(2, 3, 5, 1);
+  background-color: #fff;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.advantage__number {
+  position: relative;
+  width: 45px;
+  height: 52px;
+  margin-top: 87px;
+
+  .hexagon {
+    background-color: rgba(0, 0, 0, 1);
+  }
+}
+
+.advantage__figure {
+  max-width: 248px;
+  max-height: 190px;
 }
 
 @media screen and (max-width: 1024px) {

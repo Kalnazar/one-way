@@ -4,16 +4,23 @@
       <div
         *ngFor="let advantage of advantages; let i = index"
         class="advantage"
-        [ngStyle]="{ 'background-image': 'url(' + advantage.imageUrl + ')' }"
       >
-        <div class="advantage__number">
-          <p>0{{ i + 1 }}</p>
-        </div>
+        <div class="hexagon center">
+          <div class="advantage__number">
+            <div class="hexagon">
+              <p>0{{ i + 1 }}</p>
+            </div>
+          </div>
 
-        <div class="description">
-          <h3>{{ advantage.title }}</h3>
-          <p class="statement" [innerHTML]="advantage.statement"></p>
-          <p class="result">{{ advantage.result }}</p>
+          <div class="description">
+            <h3>{{ advantage.title }}</h3>
+            <p class="statement" [innerHTML]="advantage.statement"></p>
+            <p class="result">{{ advantage.result }}</p>
+          </div>
+
+          <div class="advantage__figure">
+            <img src="{{ advantage.imageUrl }}" alt="Advantage Icon" />
+          </div>
         </div>
       </div>
     </div>

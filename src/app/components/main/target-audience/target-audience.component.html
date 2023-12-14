@@ -4,13 +4,14 @@
       <div
         *ngFor="let audience of targetAudience; let i = index"
         class="audience"
-        [style.background-image]="'url(' + polygonImageUrl + ')'"
       >
-        <div class="target">
-          <img src="{{ audience.imageUrl }}" alt="Audience Icon" />
-          <p class="description">{{ audience.description }}</p>
+        <div class="hexagon">
+          <div class="target">
+            <img src="{{ audience.imageUrl }}" alt="Audience Icon" />
+            <p class="description">{{ audience.description }}</p>
+          </div>
+          <p class="order">0{{ i + 1 }}</p>
         </div>
-        <p class="order">0{{ i + 1 }}</p>
       </div>
     </div>
   </div>

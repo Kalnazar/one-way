@@ -29,7 +29,7 @@ export class EntryComponent implements OnInit {
     elements.forEach((el, index) => {
       const rect = el.getBoundingClientRect();
       if (rect.top < window.innerHeight) {
-        this.rectangles[index].isVisible = true;
+        // this.rectangles[index].isVisible = true;
       }
     });
   }

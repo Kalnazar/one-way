@@ -12,15 +12,22 @@ section {
   width: 386px;
   height: 446px;
   position: relative;
+}
+
+.hexagon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  border: 1px solid rgba(96, 96, 96, 1);
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
 
 img {
@@ -49,6 +56,7 @@ img {
   p {
     font-size: 18px;
     margin-top: 30px;
+    line-height: 24.47px;
   }
 }
 

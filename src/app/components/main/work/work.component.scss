@@ -10,19 +10,21 @@ section {
 
 img {
   width: 160px;
+  height: 30px;
 }
 
 .project {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
   padding: 48px 58px 0px 58px;
   cursor: pointer;
   transition: all 0.4s ease;
 
   .project__content {
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: space-between;
 
     p {
