@@ -60,6 +60,10 @@ section {
 }
 
 @media screen and (max-width: 1024px) {
+  section {
+    padding-bottom: 80px;
+  }
+
   .center {
     grid-gap: 0px;
     position: relative;
@@ -90,6 +94,10 @@ section {
 
   .content__left {
     order: 2;
+
+    .subtitle {
+      justify-content: center;
+    }
   }
 
   .btn__container {
@@ -101,6 +109,10 @@ section {
 }
 
 @media screen and (max-width: 600px) {
+  section {
+    padding-bottom: 60px;
+  }
+
   .content__side p {
     font-size: 14px;
   }

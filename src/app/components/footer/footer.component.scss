@@ -1,0 +1,150 @@
+footer {
+  padding: 60px 0px 40px 0px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.center-column {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__details img {
+  width: 15px;
+  height: 15px;
+}
+
+.contacts__social img {
+  width: 32px;
+  height: 32px;
+}
+
+.logo img {
+  width: 159px;
+  max-height: 25px;
+}
+
+.contacts {
+  width: 40%;
+  display: grid;
+  grid-row-gap: 20px;
+}
+
+.contacts__phone {
+  display: flex;
+  align-items: center;
+
+  p {
+    margin-left: 5px;
+    font-size: 21px;
+  }
+}
+
+.social__email {
+  display: flex;
+  align-items: center;
+
+  p {
+    margin-left: 5px;
+    border-bottom: 1px solid var(--text-blue);
+    font-size: 18px;
+  }
+}
+
+.contacts__social {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 17px;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 15px;
+
+  a {
+    color: #fff;
+    padding: 3px;
+    border-bottom: 1px solid rgba(96, 96, 96, 1);
+  }
+}
+
+.item4 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.item5 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+@media screen and (max-width: 1024px) {
+  footer {
+    padding: 50px 0px;
+  }
+
+  .logo__container {
+    order: 1;
+  }
+
+  .content {
+    order: 2;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacts {
+    width: 100%;
+    grid-row-gap: 40px;
+    justify-content: center;
+  }
+
+  .contacts__details {
+    flex-direction: column;
+
+    .contacts__phone,
+    .social__email {
+      justify-content: center;
+    }
+
+    .social__email {
+      margin-top: 20px;
+    }
+  }
+
+  .contacts__social {
+    display: none;
+  }
+
+  .menu {
+    margin-top: 70px;
+  }
+
+  .item4 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .item5 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu {
+    grid-column-gap: 0px;
+  }
+}
