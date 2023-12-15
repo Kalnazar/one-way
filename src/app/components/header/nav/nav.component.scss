@@ -87,6 +87,14 @@ img {
 }
 
 @media screen and (max-width: 600px) {
+  .contacts {
+    order: 2;
+  }
+
+  .logo {
+    order: 1;
+  }
+
   .contacts__content .contacts__phone {
     font-size: 16px;
   }
